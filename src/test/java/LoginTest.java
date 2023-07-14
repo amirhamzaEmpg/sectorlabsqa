@@ -56,6 +56,11 @@ public class LoginTest {
 
     }
 
+    @Test
+    public void test() {
+        System.out.println("Hello Automation Engineers");
+    }
+
     @AfterTest
     public void quit() {
         driver.quit();
