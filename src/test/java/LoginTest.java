@@ -53,10 +53,7 @@ public class LoginTest {
         driver.findElement(By.cssSelector("button[type='submit']")).click();
         //5. verify if logged in
         assert driver.findElement(By.className("_3ea7cdfa")).isDisplayed();
-        //comment
-        //second comment
-        //thrid comment
-        //fourth comment
+
     }
 
     @AfterTest
