@@ -54,6 +54,7 @@ public class LoginTest {
         //5. verify if logged in
         assert driver.findElement(By.className("_3ea7cdfa")).isDisplayed();
         //comment
+        //second comment
     }
 
     @AfterTest
