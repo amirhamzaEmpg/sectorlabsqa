@@ -40,6 +40,22 @@ public class LoginTest {
 
     }
 
+    @Test
+    public void loginWithInValidCredentials() {
+        driver.get("https://www.bayut.com/en");
+        //1. Click login button
+        driver.findElement(By.cssSelector("[aria-label='Login']")).click();
+        //2. Enter Email
+        driver.findElement(By.cssSelector("[name='email']")).sendKeys("muhammad.haris@dubizzlelabs.com");
+        //3. Enter password
+        driver.findElement(By.id("password")).sendKeys("1234567b");
+        //4. Click login button
+        driver.findElement(By.cssSelector("button[type='submit']")).click();
+        //5. verify if logged in
+        assert driver.findElement(By.className("_3ea7cdfa")).isDisplayed();
+
+    }
+
     @AfterTest
     public void quit() {
         driver.quit();
